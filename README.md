@@ -3,6 +3,7 @@
 🛠️ Projektstruktur
 
 wahlprogramme-analyse/
+
 │── wahlprogramme_scraper.py  # Web Scraper 
 
 │── text_cleaner.py           # Wahlprogramm-Extraktion & Reinigung
