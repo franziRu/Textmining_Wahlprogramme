@@ -3,12 +3,18 @@
 🛠️ Projektstruktur
 
 wahlprogramme-analyse/
-│── wahlprogramme_scraper.py  # Web Scraper
+│── wahlprogramme_scraper.py  # Web Scraper 
+
 │── text_cleaner.py           # Wahlprogramm-Extraktion & Reinigung
+
 │── text_analysis.py          # Wortanalyse & Wordcloud
+
 │── preprocessing.py          # Stopwords, Interpunktion & Lemmatisierung
+
 │── main.py                   # Steuerung der Analyse
+
 │── requirements.txt          # Python-Pakete
+
 │── README.md                 # Projektbeschreibung
 
 🔍 Funktionsübersicht
