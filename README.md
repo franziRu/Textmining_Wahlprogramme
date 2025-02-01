@@ -1,5 +1,4 @@
 # Textmining_Wahlprogramme
-# Textmining_Wahlprogramme
 
 🛠️ Projektstruktur
 
