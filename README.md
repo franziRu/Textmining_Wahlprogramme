@@ -27,6 +27,14 @@
                 Holt die HTML-Inhalte der Wahlprogramme von verschiedenen Parteiseiten
                 
                 Extrahiert den sichtbaren Text
+
+                Es wurden folgende Wahlprogramme verwendet: 
+                
+                Grün: Cori https://www.gruene.de/wofuer-wir-kaempfen 
+                FDP: Nathalie https://www.fdp.de/das-wahlprogramm-der-freien-demokraten-zur-bundestagswahl-2025 - 
+                CDU: Lukas: https://www.cdu.de/wahlprogramm-von-cdu-und-csu/
+                SPD: Vanessa: https://mehr.spd.de/programm/
+                AFD: Franzi: https://www.afd.de/zeit-fuer-deutschland/?gad_source=1&gclid=CjwKCAiA2JG9BhAuEiwAH_zf3rSpz0U9WK6JHzQau4pG8FT1wBMr68bN3q-_Gani6JDrd7F5_Qt4bhoCS-sQAvD_BwE
     
     2️⃣ text_cleaner.py
     
