@@ -1,3 +1,9 @@
 # Ignoriere virtuelle Umgebungen
 myenv/
 pupu\
+paraphrase-multilingual-MiniLM-L12-v2_all_similaritys.pkl
+paraphrase-multilingual-MiniLM-L12-v2_max_similaritys.parquet
+paraphrase-multilingual-MiniLM-L12-v2_Theses_all_similaritys.pkl
+paraphrase-multilingual-MiniLM-L12-v2_Theses_max_similaritys.parquet
+paraphrase-multilingual-MiniLM-L12-v2_Theses_Text_all_similaritys.pkl
+paraphrase-multilingual-MiniLM-L12-v2_Theses_Text_max_similaritys.parquet
