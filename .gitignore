@@ -1,3 +1,6 @@
 # Ignoriere virtuelle Umgebungen
 myenv/
-pupu\
+pupu/
+*.pkl
+.parquet
+*.csv
