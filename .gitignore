@@ -1,3 +1,4 @@
 # Ignoriere virtuelle Umgebungen
 myenv/
-pupu\
+pupu/
+*.csv
