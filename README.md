@@ -1,70 +1,49 @@
 # Textmining_Wahlprogramme
 
-# Textmining_Wahlprogramme
-
 🛠️ Projektstruktur
+    01 Datenerfassung
+      
+      │── 01_scraping_parteiname.ipynb    
+      # Extraktion und Gliederung aller Wahlprogramme (Parteiname steht hierbei für den Namen der Partei, dieser variiert innerhalb der Dateinamen)
+      
+      │── 01_extraction_wahlomat.ipynb    
+      # Extraktion der Wahlomat-Thesen aus der bereitgestellten Excel Datei 
 
-      wahlprogramme-analyse/
+    02 Verständnis und Zusammenführung der Daten
       
-      │── wahlprogramme_scraper.py  # Web Scraper 
+      │── 02_combine_party_textes.ipynb   
+      # Zusammenführen aller Parteitexte
       
-      │── text_cleaner.py           # Wahlprogramm-Extraktion & Reinigung
-      
-      │── text_analysis.py          # Wortanalyse & Wordcloud
-      
-      │── preprocessing.py          # Stopwords, Interpunktion & Lemmatisierung
-      
-      │── main.py                   # Steuerung der Analyse
-      
-      │── requirements.txt          # Python-Pakete
-      
-      │── README.md                 # Projektbeschreibung
+      │── 02_data_understanding         
+      # Verständnis der Daten und Vergabe der Manifesto Berta Klassen
 
-🔍 Funktionsübersicht
+    03 Vorbereitung der Daten und der Klassenzusammenhänge
+      
+      │── 03_adjazenzmatrix.ipynb                    
+      # Definition der Adjazenzmatrix der Manifesto Berta Klassen
+      
+      │── 03_preprocessed_texts.ipynb          
+      # Vorverarbeitung der Texte
 
-    1️⃣ wahlprogramme_scraper.py
-    
-                Holt die HTML-Inhalte der Wahlprogramme von verschiedenen Parteiseiten
-                
-                Extrahiert den sichtbaren Text
+    04 Analyse der Daten anhand der Modelle
+      
+      │── 04_classification_manifestoBERTA.ipynb    
+      # Modell-Ansatz 2, Labeling anhand der Manifesto Berta Klassen
+      
+      │── 04_pre_labeled_MPNET.ipynb                  
+      # Modell-Ansatz 3.2, Labeling anhand der Manifesto Berta Klassen mit anschließender Similarity Analyse
+      
+      │── 04_sBERT_mpnet_similarity_run.ipynb       
+      # Modell-Ansatz 3.1, Labeling anhand der Manifesto Berta Haupt-Klassen mit anschließender Similarity Analyse, beinhaltet auch Durchläufe ohne Vorklassifizierung
 
-                Es wurden folgende Wahlprogramme verwendet: 
-                
-                Grün: Cori https://www.gruene.de/wofuer-wir-kaempfen 
-                FDP: Nathalie https://www.fdp.de/das-wahlprogramm-der-freien-demokraten-zur-bundestagswahl-2025 - 
-                CDU: Lukas: https://www.cdu.de/wahlprogramm-von-cdu-und-csu/
-                SPD: Vanessa: https://mehr.spd.de/programm/
-                AFD: Franzi: https://www.afd.de/zeit-fuer-deutschland/?gad_source=1&gclid=CjwKCAiA2JG9BhAuEiwAH_zf3rSpz0U9WK6JHzQau4pG8FT1wBMr68bN3q-_Gani6JDrd7F5_Qt4bhoCS-sQAvD_BwE
-    
-    2️⃣ text_cleaner.py
-    
-                Entfernt allgemeine Inhalte wie Impressum & Datenschutz
-                
-                Begrenzt den Text auf den relevanten Bereich des Wahlprogramms
-    
-    3️⃣ text_analysis.py
-    
-                Zählt die Anzahl der Wörter
-                
-                Ermittelt die häufigsten Wörter
-                
-                Erstellt eine Wordcloud für eine visuelle Analyse
-    
-    4️⃣ preprocessing.py
-    
-                Entfernt Stopwords
-                
-                Entfernt Interpunktion
-                
-                Lemmatisiert Wörter zur besseren Analyse
-                
-                Prüft die Auswirkungen des Entfernens von Zahlen
-    
-    5️⃣ main.py
-    
-                Führt alle Module zusammen und koordiniert die Analyse
-                
-                Zeigt erste Ergebnisse wie Wortanzahl & häufigste Begriffe an
+      │── 04_Spacy_Similarity_run.ipynb       
+      # Modell-Ansatz 1, reine Similarity Analyse
+
+    05 Auswertung der Ergebnisse
+      
+      │── 05_model_evaluation.ipynb                
+      # Auswertung der Ergebnisse aller Modelle
+
 
 🛠️ Installation
 
@@ -80,19 +59,7 @@
 
 🎯 Nutzung
 
-    1️⃣ Projekt starten
-    
-                python main.py
-                
-                Nach der Ausführung werden die Wahlprogramme analysiert und relevante Daten ausgegeben.
+    Der Code muss in der durch die in den Dateinamen vergebenen Zahlen definierten Reihenfolge ausgeführt werden
 
-📅 requirements.txt
 
-                beautifulsoup4
-                requests
-                nltk
-                wordcloud
-                matplotlib
-    
-    Diese Bibliotheken sind erforderlich für das Web Scraping, die Textverarbeitung und die Visualisierung der Ergebnisse.
 
