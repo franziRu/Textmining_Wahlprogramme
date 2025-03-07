@@ -1,6 +1,7 @@
 # Textmining_Wahlprogramme
 
 🛠️ Projektstruktur
+    
     01 Datenerfassung
       
       │── 01_scraping_parteiname.ipynb    
@@ -23,25 +24,26 @@
       # Vorverarbeitung der Texte
 
 
-    04 Analyse der Daten
+     04 Analyse der Daten
 
-    │── 04_data_understanding         
-    # Verständnis der Daten und Vergabe der ManifestoBERTAa Klassen    
+      │── 04_data_understanding         
+      # Verständnis der Daten und Vergabe der ManifestoBERTAa Klassen    
 
     05 Modelle zur Klassifikation und Ähnlichkeitsanalyse
       
-    │── 05_classification_manifestoBERTA.ipynb    
-    # Modell-Ansatz 2, Labeling anhand der Manifesto Berta Klassen
+      │── 05_classification_manifestoBERTA.ipynb    
+      # Modell-Ansatz 2, Labeling anhand der Manifesto Berta Klassen
 
-    │── 05_Spacy_Similarity_run.ipynb       
-    # Modell-Ansatz 1, reine Similarity Analyse
+      │── 05_Spacy_Similarity_run.ipynb       
+      # Modell-Ansatz 1, reine Similarity Analyse
 
     06 Kombination der Modelle zur Ähnlichkeitsanalyse und Klassifikation 
-    │── 06_pre_labeled_MPNET.ipynb                  
-    # Modell-Ansatz 3.2, Labeling anhand der Manifesto Berta Klassen mit anschließender Similarity Analyse
-    
-    │── 06_sBERT_mpnet_similarity_run.ipynb       
-    # Modell-Ansatz 3.1, Labeling anhand der Manifesto Berta Haupt-Klassen mit anschließender Similarity Analyse, beinhaltet auch Durchläufe ohne Vorklassifizierung
+
+      │── 06_pre_labeled_MPNET.ipynb                  
+      # Modell-Ansatz 3.2, Labeling anhand der Manifesto Berta Klassen mit anschließender Similarity Analyse
+      
+      │── 06_sBERT_mpnet_similarity_run.ipynb       
+      # Modell-Ansatz 3.1, Labeling anhand der Manifesto Berta Haupt-Klassen mit anschließender Similarity Analyse, beinhaltet auch Durchläufe ohne Vorklassifizierung
 
     07 Auswertung der Ergebnisse
       
