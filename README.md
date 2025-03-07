@@ -9,39 +9,43 @@
       │── 01_extraction_wahlomat.ipynb    
       # Extraktion der Wahlomat-Thesen aus der bereitgestellten Excel Datei 
 
-    02 Verständnis und Zusammenführung der Daten
+    02 Zusammenführung der Daten
       
       │── 02_combine_party_textes.ipynb   
       # Zusammenführen aller Parteitexte
-      
-      │── 02_data_understanding         
-      # Verständnis der Daten und Vergabe der Manifesto Berta Klassen
 
     03 Vorbereitung der Daten und der Klassenzusammenhänge
       
       │── 03_adjazenzmatrix.ipynb                    
-      # Definition der Adjazenzmatrix der Manifesto Berta Klassen
+      # Definition der Adjazenzmatrix der ManifestoBERTa Klassen
       
       │── 03_preprocessed_texts.ipynb          
       # Vorverarbeitung der Texte
 
-    04 Analyse der Daten anhand der Modelle
-      
-      │── 04_classification_manifestoBERTA.ipynb    
-      # Modell-Ansatz 2, Labeling anhand der Manifesto Berta Klassen
-      
-      │── 04_pre_labeled_MPNET.ipynb                  
-      # Modell-Ansatz 3.2, Labeling anhand der Manifesto Berta Klassen mit anschließender Similarity Analyse
-      
-      │── 04_sBERT_mpnet_similarity_run.ipynb       
-      # Modell-Ansatz 3.1, Labeling anhand der Manifesto Berta Haupt-Klassen mit anschließender Similarity Analyse, beinhaltet auch Durchläufe ohne Vorklassifizierung
 
-      │── 04_Spacy_Similarity_run.ipynb       
-      # Modell-Ansatz 1, reine Similarity Analyse
+    04 Analyse der Daten
 
-    05 Auswertung der Ergebnisse
+    │── 04_data_understanding         
+    # Verständnis der Daten und Vergabe der ManifestoBERTAa Klassen    
+
+    05 Modelle zur Klassifikation und Ähnlichkeitsanalyse
       
-      │── 05_model_evaluation.ipynb                
+    │── 05_classification_manifestoBERTA.ipynb    
+    # Modell-Ansatz 2, Labeling anhand der Manifesto Berta Klassen
+
+    │── 05_Spacy_Similarity_run.ipynb       
+    # Modell-Ansatz 1, reine Similarity Analyse
+
+    06 Kombination der Modelle zur Ähnlichkeitsanalyse und Klassifikation 
+    │── 06_pre_labeled_MPNET.ipynb                  
+    # Modell-Ansatz 3.2, Labeling anhand der Manifesto Berta Klassen mit anschließender Similarity Analyse
+    
+    │── 06_sBERT_mpnet_similarity_run.ipynb       
+    # Modell-Ansatz 3.1, Labeling anhand der Manifesto Berta Haupt-Klassen mit anschließender Similarity Analyse, beinhaltet auch Durchläufe ohne Vorklassifizierung
+
+    07 Auswertung der Ergebnisse
+      
+      │── 07_model_evaluation.ipynb                
       # Auswertung der Ergebnisse aller Modelle
 
 
