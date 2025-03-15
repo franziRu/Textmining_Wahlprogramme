@@ -1,0 +1,77 @@
+\begin{tabular}{llllllllll}
+\toprule
+ & model & lable_text_column & party_text_column & Manifesto_sorted & accuracy & precision & recall & f1 & combined_score \\
+\midrule
+1 & sBERT politicians & These_unique_words & These_unique_words & class prefitted & 0,4518 & 0,4082 & 0,4153 & 0,3564 & 0,3984 \\
+2 & sBERT politicians & These_lemmatized & These_lemmatized & class prefitted & 0,4518 & 0,4082 & 0,4153 & 0,3564 & 0,3984 \\
+3 & sBERT politicians & These_no_stopwords & These_no_stopwords & class prefitted & 0,4474 & 0,3914 & 0,3967 & 0,3436 & 0,3887 \\
+4 & sBERT politicians & These & These & class prefitted & 0,443 & 0,389 & 0,3936 & 0,3406 & 0,3851 \\
+5 & manifestoBERTa & These & These & class prefitted & 0,4386 & 0,3677 & 0,3751 & 0,3301 & 0,3767 \\
+6 & SpaCy news large & These_lemmatized & Text_lemmatized & False & 0,4737 & 0,3244 & 0,3673 & 0,2741 & 0,3473 \\
+7 & SpaCy news large & These & Text & False & 0,4737 & 0,2918 & 0,3673 & 0,2721 & 0,3457 \\
+8 & SpaCy news large & These_no_stopwords & Text_no_stopwords & False & 0,4737 & 0,2918 & 0,3673 & 0,2721 & 0,3457 \\
+9 & SpaCy news large & These_no_stopwords & These_no_stopwords & False & 0,4693 & 0,2688 & 0,3641 & 0,2683 & 0,3414 \\
+10 & sBERT politicians & These_no_stopwords & Text_no_stopwords & True & 0,4386 & 0,4226 & 0,3429 & 0,2659 & 0,3311 \\
+11 & SpaCy news large & These_unique_words & These_unique_words & False & 0,4605 & 0,2188 & 0,3579 & 0,2579 & 0,3306 \\
+12 & SpaCy news large & These_lemmatized & These_lemmatized & False & 0,4605 & 0,2188 & 0,3579 & 0,2579 & 0,3306 \\
+13 & MiniLM paraphrase & These_no_stopwords & These_no_stopwords & False & 0,4123 & 0,2096 & 0,4007 & 0,2724 & 0,3281 \\
+14 & SpaCy news large & These & These & False & 0,4561 & 0,2173 & 0,3548 & 0,2559 & 0,3278 \\
+15 & MPNet paraphrase & These_no_stopwords & These_no_stopwords & False & 0,4123 & 0,2051 & 0,3853 & 0,2665 & 0,3237 \\
+16 & sBERT politicians & These_lemmatized & These_lemmatized & False & 0,4693 & 0,2681 & 0,3487 & 0,2446 & 0,3216 \\
+17 & sBERT politicians & These_unique_words & These_unique_words & False & 0,4693 & 0,2681 & 0,3487 & 0,2446 & 0,3216 \\
+18 & MPNet paraphrase & These_lemmatized & Text_lemmatized & False & 0,4035 & 0,2062 & 0,3944 & 0,2663 & 0,3209 \\
+19 & sBERT politicians & These_lemmatized & These_lemmatized & True & 0,4649 & 0,2396 & 0,3456 & 0,2418 & 0,3181 \\
+20 & sBERT politicians & These_unique_words & These_unique_words & True & 0,4649 & 0,2396 & 0,3456 & 0,2418 & 0,3181 \\
+21 & MPNet paraphrase & These_unique_words & These_unique_words & False & 0,4079 & 0,1982 & 0,3667 & 0,2571 & 0,3154 \\
+22 & MPNet paraphrase & These_no_stopwords & Text_no_stopwords & False & 0,4167 & 0,1948 & 0,3576 & 0,2521 & 0,3141 \\
+23 & MPNet paraphrase & These_lemmatized & These_lemmatized & False & 0,4035 & 0,1962 & 0,3636 & 0,2544 & 0,3121 \\
+24 & MPNet paraphrase & These & Text & False & 0,4035 & 0,1984 & 0,3636 & 0,2529 & 0,3109 \\
+25 & MiniLM paraphrase & These_lemmatized & These_lemmatized & False & 0,3947 & 0,1974 & 0,3728 & 0,2552 & 0,31 \\
+26 & MiniLM paraphrase & These_unique_words & These_unique_words & False & 0,3947 & 0,1974 & 0,3728 & 0,2552 & 0,31 \\
+27 & sBERT politicians & These_lemmatized & Text_lemmatized & True & 0,4211 & 0,3765 & 0,3151 & 0,2452 & 0,3099 \\
+28 & MiniLM paraphrase & These_no_stopwords & Text_no_stopwords & False & 0,3904 & 0,196 & 0,3697 & 0,2525 & 0,3066 \\
+29 & MPNet paraphrase & These & These & False & 0,364 & 0,2121 & 0,3972 & 0,2569 & 0,3012 \\
+30 & sBERT politicians & These & Text & True & 0,4211 & 0,2539 & 0,3146 & 0,2262 & 0,2943 \\
+31 & sBERT politicians & These_no_stopwords & These_no_stopwords & False & 0,4693 & 0,1564 & 0,3333 & 0,2129 & 0,293 \\
+32 & sBERT politicians & These & These & True & 0,4693 & 0,1564 & 0,3333 & 0,2129 & 0,293 \\
+33 & sBERT politicians & These_no_stopwords & These_no_stopwords & True & 0,4693 & 0,1564 & 0,3333 & 0,2129 & 0,293 \\
+34 & sBERT politicians & These_no_stopwords & Text_no_stopwords & False & 0,4693 & 0,1564 & 0,3333 & 0,2129 & 0,293 \\
+35 & sBERT politicians & These & Text & False & 0,4693 & 0,1564 & 0,3333 & 0,2129 & 0,293 \\
+36 & sBERT politicians & These & These & False & 0,4693 & 0,1564 & 0,3333 & 0,2129 & 0,293 \\
+37 & MiniLM paraphrase & These_no_stopwords & These_no_stopwords & True & 0,3289 & 0,5486 & 0,4188 & 0,263 & 0,2923 \\
+38 & sBERT politicians & These_lemmatized & Text_lemmatized & False & 0,4649 & 0,1557 & 0,3302 & 0,2116 & 0,2908 \\
+39 & MPNet paraphrase & These_no_stopwords & Text_no_stopwords & True & 0,3553 & 0,1999 & 0,3602 & 0,2426 & 0,2883 \\
+40 & MiniLM paraphrase & These_lemmatized & Text_lemmatized & False & 0,3421 & 0,1976 & 0,3816 & 0,2426 & 0,2839 \\
+41 & MPNet paraphrase & These_unique_words & These_unique_words & True & 0,3289 & 0,5327 & 0,3878 & 0,2447 & 0,2806 \\
+42 & MPNet paraphrase & These & Text & True & 0,3333 & 0,2034 & 0,3754 & 0,2405 & 0,2794 \\
+43 & MPNet paraphrase & These_lemmatized & These_lemmatized & True & 0,3246 & 0,5311 & 0,3847 & 0,2421 & 0,2773 \\
+44 & MiniLM paraphrase & These_lemmatized & These_lemmatized & True & 0,3114 & 0,5405 & 0,4063 & 0,2475 & 0,2758 \\
+45 & MiniLM paraphrase & These_unique_words & These_unique_words & True & 0,3114 & 0,5405 & 0,4063 & 0,2475 & 0,2758 \\
+46 & MPNet paraphrase & These_no_stopwords & These_no_stopwords & True & 0,3158 & 0,5222 & 0,3787 & 0,2444 & 0,2756 \\
+47 & sBERT politicians & These_no_stopwords & Text_no_stopwords & class prefitted & 0,2895 & 0,3327 & 0,3763 & 0,2568 & 0,2722 \\
+48 & MiniLM paraphrase & These & Text & False & 0,2982 & 0,2246 & 0,4275 & 0,24 & 0,266 \\
+49 & sBERT politicians & These_lemmatized & Text_lemmatized & class prefitted & 0,2851 & 0,3227 & 0,3576 & 0,2488 & 0,2657 \\
+50 & MiniLM paraphrase & These_no_stopwords & Text_no_stopwords & True & 0,2939 & 0,5344 & 0,3939 & 0,2411 & 0,2649 \\
+51 & MPNet paraphrase & These_lemmatized & Text_lemmatized & True & 0,3026 & 0,2042 & 0,3844 & 0,2313 & 0,2622 \\
+52 & sBERT politicians & These & Text & class prefitted & 0,2807 & 0,3319 & 0,3697 & 0,2438 & 0,2609 \\
+53 & MiniLM paraphrase & These & These & False & 0,307 & 0,1928 & 0,3567 & 0,2252 & 0,2598 \\
+54 & MPNet paraphrase & These & These & True & 0,2763 & 0,3811 & 0,4123 & 0,2383 & 0,2559 \\
+55 & MiniLM paraphrase & These_lemmatized & Text_lemmatized & True & 0,25 & 0,4122 & 0,3629 & 0,2184 & 0,2332 \\
+56 & MiniLM paraphrase & These & These & True & 0,2368 & 0,4205 & 0,3845 & 0,2201 & 0,2282 \\
+57 & MPNet paraphrase & These_unique_words & These_unique_words & class prefitted & 0,2237 & 0,3877 & 0,421 & 0,2038 & 0,2133 \\
+58 & MPNet paraphrase & These_lemmatized & These_lemmatized & class prefitted & 0,2193 & 0,3881 & 0,4179 & 0,2006 & 0,2096 \\
+59 & MiniLM paraphrase & These & Text & True & 0,2061 & 0,5462 & 0,393 & 0,186 & 0,1956 \\
+60 & MiniLM paraphrase & These_no_stopwords & These_no_stopwords & class prefitted & 0,1974 & 0,4795 & 0,4024 & 0,1872 & 0,1922 \\
+61 & MPNet paraphrase & These_no_stopwords & These_no_stopwords & class prefitted & 0,1974 & 0,3815 & 0,4177 & 0,1826 & 0,1897 \\
+62 & MPNet paraphrase & These_no_stopwords & Text_no_stopwords & class prefitted & 0,1974 & 0,21 & 0,3866 & 0,1762 & 0,1862 \\
+63 & MiniLM paraphrase & These_lemmatized & These_lemmatized & class prefitted & 0,1886 & 0,2173 & 0,3804 & 0,1703 & 0,179 \\
+64 & MiniLM paraphrase & These_unique_words & These_unique_words & class prefitted & 0,1886 & 0,2173 & 0,3804 & 0,1703 & 0,179 \\
+65 & MPNet paraphrase & These_lemmatized & Text_lemmatized & class prefitted & 0,1623 & 0,3544 & 0,3618 & 0,1486 & 0,1552 \\
+66 & MiniLM paraphrase & These_no_stopwords & Text_no_stopwords & class prefitted & 0,1623 & 0,2312 & 0,3771 & 0,1487 & 0,1552 \\
+67 & MPNet paraphrase & These & Text & class prefitted & 0,1623 & 0,2285 & 0,3925 & 0,1472 & 0,1544 \\
+68 & MPNet paraphrase & These & These & class prefitted & 0,1491 & 0,2429 & 0,3832 & 0,1351 & 0,1418 \\
+69 & MiniLM paraphrase & These_lemmatized & Text_lemmatized & class prefitted & 0,1491 & 0,2141 & 0,3832 & 0,1337 & 0,141 \\
+70 & MiniLM paraphrase & These & These & class prefitted & 0,1272 & 0,558 & 0,3677 & 0,1128 & 0,1196 \\
+71 & MiniLM paraphrase & These & Text & class prefitted & 0,1228 & 0,2366 & 0,3645 & 0,1064 & 0,114 \\
+\bottomrule
+\end{tabular}
